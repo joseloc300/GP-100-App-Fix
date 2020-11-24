@@ -32,3 +32,6 @@ Requires further testing.
 
 ## RVB Module
 Requires further testing.
+
+### Clear Sky
+- Decay knob's range is [0-100] but firmware expects [0-99]. Changed Dmax to 99.

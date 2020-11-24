@@ -1242,7 +1242,7 @@
 
     <Alg Name="Clear Sky" Module="RVB" Code="0C 00 00 05" Index="8" >
       <Knob Name = "Mix" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
-      <Knob Name = "Decay" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "100" Type = "1"  />
+      <Knob Name = "Decay" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
       <Switch Name = "Trail" default = "0" ID ="3" idx = "2"   Type = "3"  >
         <Menu Name = "On" ID= "1" />
         <Menu Name = "Off" ID= "0" />
