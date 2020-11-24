@@ -4,10 +4,10 @@
 All effects seems to be working properly and require no changes.
 
 ### Pitch
-- L-Pitch knob fills in backwards compared to the unit. Not changed as it doesn't crash the unit.
+- L-Pitch knob fills in backwards compared to the unit. Does not cause crashes. No changes.
 
 ### P-Bend
-- L-Pitch knob fills in backwards compared to the unit. Not changed as it doesn't crash the unit.
+- L-Pitch knob fills in backwards compared to the unit. Does not cause crashes. No changes.
 
 ## DST Module
 Requires further testing.
@@ -33,5 +33,8 @@ Requires further testing.
 ## RVB Module
 Requires further testing.
 
+### Plate
+- Decay knob's range is [0-99] but firmware expects [0-100]. Does not cause crashes. Changed Dmax to 100.
+
 ### Clear Sky
-- Decay knob's range is [0-100] but firmware expects [0-99]. Changed Dmax to 99.
+- Decay knob's range is [0-100] but firmware expects [0-99]. Can cause crashes. Changed Dmax to 99.
