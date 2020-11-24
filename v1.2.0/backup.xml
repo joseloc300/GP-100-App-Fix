@@ -1,0 +1,1255 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<gp100>
+<Catalog Name = "PRE" >
+    <Alg Name="COMP  " Module="PRE" Code="00 00 00 00" Index="0" >
+      <Knob Name = "Sustain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Output" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="COMP4" Module="PRE" Code="00 00 00 01" Index="1" >
+      <Knob Name = "Sustain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Attack" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Output" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Clip" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Boost" Module="PRE" Code="00 00 00 1A" Index="2" >
+        <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Switch Name = "Bright" default = "1" ID ="3" idx = "1"   Type = "3"  >
+            <Menu Name = "On" ID= "1" />
+            <Menu Name = "Off" ID= "0" />
+        </Switch>
+    </Alg>
+
+    <Alg Name="AC Sim" Module="PRE" Code="01 00 00 01" Index="3" >
+      <Knob Name = "Body" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Top" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Combox Name = "Mode" default = "0" ID ="4" idx = "3" Type = "2"  >
+        <Menu Name = "STD"   ID= "0" />
+        <Menu Name = "Jumbo"   ID= "1" />
+        <Menu Name = "ENH"   ID= "2" />
+        <Menu Name = "Piezo"   ID= "3" />
+      </Combox>
+
+    </Alg>
+
+    <Alg Name="T-Wah" Module="PRE" Code="01 00 00 0F" Index="4" >
+      <Knob Name = "Sens" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Range" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Q" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Mix" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Combox Name = "Mode" default = "0" ID ="5" idx = "4" Type = "2"  >
+        <Menu Name = "Guitar"   ID= "0" />
+        <Menu Name = "Bass"   ID= "1" />
+      </Combox>
+    </Alg>
+
+    <Alg Name="A-WAH" Module="PRE" Code="01 00 00 15" Index="5" >
+      <Knob Name = "Depth" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Rate" default = "0.5" ID ="2" idx = "1" Dmin = "0.1" Dmax = "10" Type = "1" Step= "0.1"  bind = "Sync"/>
+      <Knob Name = "VOL" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Low" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Q" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "High" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Sync" default = "0" ID ="7" idx = "6"   Type = "3" SubType="Power"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="V-Wah" Module="PRE" Code="05 00 00 01" Index="6" >
+      <Knob Name = "Range" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Q" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="C-Wah" Module="PRE" Code="05 00 00 08" Index="7" >
+      <Knob Name = "Range" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Q" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="OCTA" Module="PRE" Code="01 00 00 21" Index="8" >
+      <Knob Name = "L-Oct" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "H-Oct" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Dry" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Pitch" Module="PRE" Code="01 00 00 23" Index="9" >
+      <Knob Name = "H-Pitch" default = "12.0" ID ="1" idx = "0" Dmin = "0" Dmax = "24" Type = "1"  />
+      <Knob Name = "L-Pitch" default = "-12.0" ID ="2" idx = "1" Dmin = "0" Dmax = "-24" Type = "1" valueType = "2" />
+      <Knob Name = "Dry" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "H-Vol" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "L-Vol" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="P-Bend" Module="PRE" Code="01 00 00 24" Index="10" >
+      <Knob Name = "H-Pitch" default = "12.0" ID ="1" idx = "0" Dmin = "0" Dmax = "12" Type = "1"  />
+      <Knob Name = "L-Pitch" default = "0.0" ID ="2" idx = "1" Dmin = "0" Dmax = "-12" Type = "1" valueType = "2"  />
+      <Knob Name = "Wet" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Dry" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Range" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Saturate" Module="PRE" Code="01 00 00 33" Index="11" >
+      <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Mix" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "H-Cut" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Step Filter" Module="PRE" Code="01 00 00 19" Index="12" >
+      <Knob Name = "Step 1" default = "10.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Step 2" default = "30.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Step 3" default = "60.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Step 4" default = "80.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Rate" default = "0.5" ID ="5" idx = "4" Dmin = "0.1" Dmax = "10" Type = "1"  Step = "0.1" bind = "Sync"/>
+      <Switch Name = "Sync" default = "0" ID ="6" idx = "5"   Type = "3" SubType="Power"  >
+          <Menu Name = "On" ID= "1" />
+          <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Ring Mod" Module="PRE" Code="01 00 00 2F" Index="13" >
+      <Knob Name = "Mix" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Freq" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Fine" default = "0.0" ID ="3" idx = "2" Dmin = "-50" Dmax = "50" Type = "1"  />
+      <Knob Name = "Tone" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+</Catalog>
+
+
+<Catalog Name = "DST" >
+    <Alg Name="Green OD" Module="DST" Code="03 00 00 00" Index="0" >
+      <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Tone" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Yellow OD" Module="DST" Code="03 00 00 02" Index="1" >
+      <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Super OD" Module="DST" Code="03 00 00 06" Index="2" >
+      <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Tone" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Blues OD" Module="DST" Code="03 00 00 09" Index="3" >
+      <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Tone" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Lazaro" Module="DST" Code="03 00 00 22" Index="4" >
+      <Knob Name = "Sustain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Tone" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Red Haze" Module="DST" Code="03 00 00 24" Index="5" >
+      <Knob Name = "Fuzz" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Darktale" Module="DST" Code="03 00 00 2B" Index="6" >
+      <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Filter" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Flex OD" Module="DST" Code="03 00 00 3F" Index="7" >
+      <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Tone" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Combox Name = "Mode" default = "0" ID ="4" idx = "3" Type = "2"  >
+          <Menu Name = "Normal"   ID= "0" />
+          <Menu Name = "Scoop"   ID= "1" />
+          <Menu Name = "Edge"   ID= "2" />
+      </Combox>
+      <Knob Name = "Blend" default = "50" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="SM Dist" Module="DST" Code="03 00 00 2A" Index="8" >
+      <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Tone" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="La Charger" Module="DST" Code="03 00 00 30" Index="9" >
+      <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Tone" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL" default = "50" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Bass Dist" Module="DST" Code="03 00 00 40" Index="10" >
+      <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Blend" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+</Catalog>
+
+
+<Catalog Name = "AMP" >
+    <Alg Name="Tweedy" Module="AMP" Code="07 00 00 01" Index="0" >
+      <Knob Name = "VOL" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Tone" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Output" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Bellman 59N" Module="AMP" Code="07 00 00 03" Index="1" >
+      <Knob Name = "VOL" default = "20.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PRES " default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Output" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "30.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Dark Twin" Module="AMP" Code="07 00 00 04" Index="2" >
+      <Knob Name = "VOL" default = "20.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Output" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "40.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "60.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Bright" default = "1" ID ="6" idx = "5"   Type = "3"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="L-Star CL" Module="AMP" Code="07 00 00 19" Index="3" >
+      <Knob Name = "Gain" default = "40.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+
+
+    </Alg>
+
+    <Alg Name="Foxy 30N" Module="AMP" Code="07 00 00 11" Index="4" >
+      <Knob Name = "VOL" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Cut" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Bright" default = "0" ID ="4" idx = "3"   Type = "3"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="BogSV CL" Module="AMP" Code="07 00 00 1A" Index="5" >
+      <Knob Name = "Gain" default = "20.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Bright" default = "1" ID ="6" idx = "5"   Type = "3"  >
+          <Menu Name = "On" ID= "1" />
+          <Menu Name = "Off" ID= "0" />
+      </Switch>
+
+    </Alg>
+
+    <Alg Name="J-120 CL" Module="AMP" Code="07 00 00 14" Index="6" >
+      <Knob Name = "VOL" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Bright" default = "0" ID ="5" idx = "4"   Type = "3"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Match CL" Module="AMP" Code="07 00 00 15" Index="7" >
+      <Knob Name = "Gain" default = "20.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Z38 CL" Module="AMP" Code="07 00 00 1B" Index="8" >
+      <Knob Name = "Gain" default = "20.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Cut" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Knights CL" Module="AMP" Code="07 00 00 1F" Index="9" >
+      <Knob Name = "Gain" default = "20.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Bad-KT CL" Module="AMP" Code="07 00 00 22" Index="10" >
+      <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="UK 45" Module="AMP" Code="07 00 00 2A" Index="11" >
+      <Knob Name = "VOL" default = "30.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Output" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="UK 50JP" Module="AMP" Code="07 00 00 2F" Index="12" >
+      <Knob Name = "VOL 1" default = "30.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Output" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle " default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL 2" default = "50.0" ID ="7" idx = "6" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="UK 800" Module="AMP" Code="07 00 00 35" Index="13" >
+      <Knob Name = "Gain" default = "30.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Flagman" Module="AMP" Code="07 00 00 40" Index="14" >
+      <Knob Name = "Gain" default = "30.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle " default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Z38 OD" Module="AMP" Code="07 00 00 49" Index="15" >
+      <Knob Name = "Gain" default = "30.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Cut" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="BogSV OD" Module="AMP" Code="07 00 00 3D" Index="16" >
+      <Knob Name = "Gain" default = "30.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Bellman 59B" Module="AMP" Code="07 00 00 24" Index="17" >
+      <Knob Name = "VOL" default = "30.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Output" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Foxy 30TB" Module="AMP" Code="07 00 00 27" Index="18" >
+      <Knob Name = "VOL" default = "30.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Cut" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Combox Name = "Char" ID ="6" idx = "5" Type = "2"  >
+        <Menu Name = "Cool"   ID= "0" />
+        <Menu Name = "Hot"   ID= "1" />
+      </Combox>
+    </Alg>
+
+    <Alg Name="SUPDual OD" Module="AMP" Code="07 00 00 28" Index="19" >
+      <Knob Name = "VOL 1" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Tone 1" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL 2" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Tone 2" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Output" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name=" Match OD" Module="AMP" Code="07 00 00 48" Index="20" >
+      <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Solo100 OD" Module="AMP" Code="07 00 00 47" Index="21" >
+      <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="L-Star OD" Module="AMP" Code="07 00 00 4A" Index="22" >
+      <Knob Name = "Gain" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PRES" default = "50.0" ID ="3" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="4" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="5" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="6" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="7" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Bad-KT OD" Module="AMP" Code="07 00 00 4B" Index="23" >
+      <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Edge" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Mess2C+ 1" Module="AMP" Code="07 00 00 39" Index="24" >
+        <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Mess2C+ 2" Module="AMP" Code="07 00 00 3A" Index="25" >
+        <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Knights OD" Module="AMP" Code="07 00 00 7C" Index="26" >
+      <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "VOL" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Dizz VH" Module="AMP" Code="07 00 00 65" Index="27" >
+        <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Eagle 120" Module="AMP" Code="07 00 00 5F" Index="28" >
+      <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="EV 51" Module="AMP" Code="07 00 00 5A" Index="29" >
+      <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PRES" default = "50.0" ID ="7" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Solo100 LD" Module="AMP" Code="07 00 00 59" Index="30" >
+        <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Mess4 LD" Module="AMP" Code="07 00 00 55" Index="31" >
+        <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Mess DualV" Module="AMP" Code="07 00 00 68" Index="32" >
+        <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Power LD" Module="AMP" Code="07 00 00 63" Index="33" >
+        <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Flagman+" Module="AMP" Code="07 00 00 5D" Index="34" >
+        <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Juice R100" Module="AMP" Code="07 00 00 53" Index="35" >
+      <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Mess DualM" Module="AMP" Code="07 00 00 69" Index="36" >
+        <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Bog BlueV" Module="AMP" Code="07 00 00 6D" Index="37" >
+        <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Bog RedM" Module="AMP" Code="07 00 00 6E" Index="38" >
+        <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "PRES" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Master" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Bass" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Middle" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Treble" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Classic Bass" Module="AMP" Code="07 00 00 73" Index="39" >
+        <Knob Name = "Gain" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Combox Name = "MRange" default = "1" ID ="4" idx = "3" Type = "2"  >
+        <Menu Name = "220Hz"   ID= "0" />
+        <Menu Name = "450Hz"   ID= "1" />
+        <Menu Name = "800Hz"   ID= "2" />
+        <Menu Name = "1.6kHz"   ID= "3" />
+        <Menu Name = "3kHz"   ID= "4" />
+      </Combox>
+      <Knob Name = "Treble" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Bass Pre" Module="AMP" Code="08 00 00 76" Index="40" >
+      <Knob Name = "VOL" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Bright" default = "0" ID ="2" idx = "1"   Type = "3"  >
+          <Menu Name = "On" ID= "1" />
+          <Menu Name = "Off" ID= "0" />
+      </Switch>
+      <Knob Name = "Bass" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+
+    </Alg>
+
+    <Alg Name="Mini Bass" Module="AMP" Code="08 00 00 75" Index="41" >
+      <Knob Name = "VOL" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Foxy Bass" Module="AMP" Code="07 00 00 75" Index="42" >
+      <Knob Name = "VOL" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Mess Bass" Module="AMP" Code="07 00 00 77" Index="43" >
+      <Knob Name = "VOL" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Master" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Bass" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Middle" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Treble" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="AC Pre" Module="AMP" Code="08 00 00 7A" Index="44" >
+      <Knob Name = "VOL" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Tone" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Gain" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "EQ Freq" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "EQ Q" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "EQ Gain" default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+
+    </Alg>
+
+</Catalog>
+
+
+<Catalog Name = "NR" >
+    <Alg Name="Gate 1" Module="NR" Code="00 00 00 1B" Index="0" >
+      <Knob Name = "Thre " default = "10.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Gate 2" Module="NR" Code="00 00 00 1D" Index="1" >
+      <Knob Name = "Thre" default = "10.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Attack" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Rel" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+</Catalog>
+
+
+<Catalog Name = "CAB" >
+    <Alg Name="TWD 2x12" Module="CAB" Code="0A 00 00 1B" Index="0" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="DarkTW 2x12" Module="CAB" Code="0A 00 00 12" Index="1" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="L-Star 2x12" Module="CAB" Code="0A 00 00 19" Index="2" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="2Rick 2x12" Module="CAB" Code="0A 00 00 1C" Index="3" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="J-120 2x12" Module="CAB" Code="0A 00 00 11" Index="4" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="UK-GN 2x12" Module="CAB" Code="0A 00 00 13" Index="5" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Free 2x12" Module="CAB" Code="0A 00 00 1A" Index="6" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="UK-75 4x12" Module="CAB" Code="0A 00 00 30" Index="7" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="UK-GN 4x12" Module="CAB" Code="0A 00 00 22" Index="8" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="UK-LD 4x12" Module="CAB" Code="0A 00 00 1F" Index="9" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="UK-DK 4x12" Module="CAB" Code="0A 00 00 2B" Index="10" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="UK-MD 4x12" Module="CAB" Code="0A 00 00 21" Index="11" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Pogner 4x12" Module="CAB" Code="0A 00 00 27" Index="12" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Dizz 4x12" Module="CAB" Code="0A 00 00 2E" Index="13" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Eagle 4x12" Module="CAB" Code="0A 00 00 26" Index="14" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="EV51 4x12" Module="CAB" Code="0A 00 00 20" Index="15" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Solo 4x12" Module="CAB" Code="0A 00 00 28" Index="16" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="US 4x12" Module="CAB" Code="0A 00 00 31" Index="17" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Mess-D 4x12" Module="CAB" Code="0A 00 00 24" Index="18" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="U-ban 4x12" Module="CAB" Code="0A 00 00 2C" Index="19" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Juice 4x12" Module="CAB" Code="0A 00 00 29" Index="20" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="H-Way 4x12" Module="CAB" Code="0A 00 00 2A" Index="21" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="BogSV 1x12" Module="CAB" Code="0A 00 00 06" Index="22" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Dark 1x12" Module="CAB" Code="0A 00 00 04" Index="23" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Regular 1x12" Module="CAB" Code="0A 00 00 0D" Index="24" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Bad-KT 1x12" Module="CAB" Code="0A 00 00 07" Index="25" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Foxy 1x12" Module="CAB" Code="0A 00 00 08" Index="26" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Studio 1x12" Module="CAB" Code="0A 00 00 0C" Index="27" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="SUP 1x6" Module="CAB" Code="0A 00 00 00" Index="28" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="TWD 1x8" Module="CAB" Code="0A 00 00 01" Index="29" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="TWD-P 1x10" Module="CAB" Code="0A 00 00 02" Index="30" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Bellman 4x10" Module="CAB" Code="0A 00 00 1E" Index="31" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="MessBass 2x10" Module="CAB" Code="0A 00 00 35" Index="32" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Max 4x10" Module="CAB" Code="0A 00 00 39" Index="33" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Ameg 4x10" Module="CAB" Code="0A 00 00 38" Index="34" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Ameg 8x10" Module="CAB" Code="0A 00 00 3B" Index="35" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="D" Module="CAB" Code="0A 00 00 3C" Index="36" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="OM" Module="CAB" Code="0A 00 00 3E" Index="37" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Jumbo" Module="CAB" Code="0A 00 00 3F" Index="38" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="GA" Module="CAB" Code="0A 00 00 41" Index="39" >
+      <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="" Module="CAB" Code="0A 10 00 00" Index="40" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+    <Alg Name="" Module="CAB" Code="0A 10 00 01" Index="41" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+    <Alg Name="" Module="CAB" Code="0A 10 00 02" Index="42" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+    <Alg Name="" Module="CAB" Code="0A 10 00 03" Index="43" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+    <Alg Name="" Module="CAB" Code="0A 10 00 04" Index="44" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+    <Alg Name="" Module="CAB" Code="0A 10 00 05" Index="45" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+    <Alg Name="" Module="CAB" Code="0A 10 00 06" Index="46" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+    <Alg Name="" Module="CAB" Code="0A 10 00 07" Index="47" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+    <Alg Name="" Module="CAB" Code="0A 10 00 08" Index="48" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+    <Alg Name="" Module="CAB" Code="0A 10 00 09" Index="49" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+    <Alg Name="" Module="CAB" Code="0A 10 00 0A" Index="50" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="" Module="CAB" Code="0A 10 00 0B" Index="51" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+    <Alg Name="" Module="CAB" Code="0A 10 00 0C" Index="52" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+    <Alg Name="" Module="CAB" Code="0A 10 00 0D" Index="53" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+    <Alg Name="" Module="CAB" Code="0A 10 00 0E" Index="54" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+    <Alg Name="" Module="CAB" Code="0A 10 00 0F" Index="55" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+    <Alg Name="" Module="CAB" Code="0A 10 00 10" Index="56" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+    <Alg Name="" Module="CAB" Code="0A 10 00 11" Index="57" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+    <Alg Name="" Module="CAB" Code="0A 10 00 12" Index="58" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+    <Alg Name="" Module="CAB" Code="0A 10 00 13" Index="59" >
+        <Knob Name = "Volume" default = "50.0" ID ="2" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+</Catalog>
+
+
+<Catalog Name = "EQ" >
+    <Alg Name="EQ 1" Module="EQ" Code="01 00 00 35" Index="0" >
+      <Knob Name = "125Hz" default = "0.0" ID ="1" idx = "0" Dmin = "-50" Dmax = "50" Type = "1"  />
+      <Knob Name = "400Hz" default = "0.0" ID ="2" idx = "1" Dmin = "-50" Dmax = "50" Type = "1"  />
+      <Knob Name = "800Hz" default = "0.0" ID ="3" idx = "2" Dmin = "-50" Dmax = "50" Type = "1"  />
+      <Knob Name = "1.6kHz" default = "0.0" ID ="4" idx = "3" Dmin = "-50" Dmax = "50" Type = "1"  />
+      <Knob Name = "4kHz" default = "0.0" ID ="5" idx = "4" Dmin = "-50" Dmax = "50" Type = "1"  />
+      <Knob Name = "VOL " default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="EQ 2" Module="EQ" Code="01 00 00 3A" Index="1" >
+      <Knob Name = "50Hz" default = "0.0" ID ="1" idx = "0" Dmin = "-50" Dmax = "50" Type = "1"  />
+      <Knob Name = "120Hz" default = "0.0" ID ="2" idx = "1" Dmin = "-50" Dmax = "50" Type = "1"  />
+      <Knob Name = "400Hz" default = "0.0" ID ="3" idx = "2" Dmin = "-50" Dmax = "50" Type = "1"  />
+      <Knob Name = "800Hz" default = "0.0" ID ="4" idx = "3" Dmin = "-50" Dmax = "50" Type = "1"  />
+      <Knob Name = "2kHz" default = "0.0" ID ="5" idx = "4" Dmin = "-50" Dmax = "50" Type = "1"  />
+      <Knob Name = "VOL " default = "50.0" ID ="6" idx = "5" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+</Catalog>
+
+
+<Catalog Name = "MOD" >
+    <Alg Name="A-Chorus" Module="MOD" Code="04 00 00 00" Index="0" >
+      <Knob Name = "Depth" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Rate" default = "0.5" ID ="2" idx = "1" Dmin = "0.1" Dmax = "10" Type = "1" Step = "0.1"  bind = "Sync"/>
+      <Knob Name = "Tone" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Sync" default = "0" ID ="4" idx = "3"   Type = "3" SubType="Power"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="G-Chorus" Module="MOD" Code="04 00 00 01" Index="1" >
+      <Knob Name = "Depth" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Rate" default = "0.5" ID ="2" idx = "1" Dmin = "0.1" Dmax = "10" Type = "1" Step = "0.1" bind = "Sync" />
+      <Knob Name = "VOL" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Sync" default = "0" ID ="4" idx = "3"   Type = "3" SubType="Power"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="B-Chorus" Module="MOD" Code="04 00 00 08" Index="2" >
+      <Knob Name = "Depth" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Rate" default = "0.5" ID ="2" idx = "1" Dmin = "0.1" Dmax = "10" Type = "1" Step = "0.1" bind = "Sync" />
+      <Knob Name = "Level" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Sync" default = "0" ID ="4" idx = "3"   Type = "3" SubType="Power"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Detune" Module="MOD" Code="01 00 00 29" Index="3" >
+      <Knob Name = "Detune" default = "-25" ID ="1" idx = "0" Dmin = "-50" Dmax = "50" Type = "1"  />
+      <Knob Name = "Wet" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Dry" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+    <Alg Name="Flanger" Module="MOD" Code="04 00 00 11" Index="4" >
+      <Knob Name = "Depth" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Rate" default = "0.5" ID ="2" idx = "1" Dmin = "0.1" Dmax = "10" Type = "1" Step = "0.1" bind = "Sync" />
+      <Knob Name = "PreDly" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "FdBk" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Sync" default = "0" ID ="5" idx = "4"   Type = "3" SubType="Power"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Vibrato" Module="MOD" Code="04 00 00 15" Index="5" >
+      <Knob Name = "Depth" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Rate" default = "0.5" ID ="2" idx = "1" Dmin = "0.1" Dmax = "10" Type = "1" Step = "0.1" bind = "Sync" />
+      <Switch Name = "Sync" default = "0" ID ="3" idx = "2"   Type = "3" SubType="Power"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Phaser" Module="MOD" Code="04 00 00 19" Index="6" >
+      <Knob Name = "Rate" default = "0.5" ID ="1" idx = "0" Dmin = "0.1" Dmax = "10" Type = "1" Step = "0.1" bind = "Sync" />
+      <Switch Name = "Sync" default = "0" ID ="2" idx = "1"   Type = "3" SubType="Power"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Vibe" Module="MOD" Code="04 00 00 1F" Index="7" >
+      <Knob Name = "Depth" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Rate" default = "0.5" ID ="2" idx = "1" Dmin = "0.1" Dmax = "10" Type = "1" Step = "0.1" bind = "Sync" />
+      <Switch Name = "Sync" default = "0" ID ="3" idx = "2"   Type = "3" SubType="Power"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Opto Trem" Module="MOD" Code="04 00 00 21" Index="8" >
+      <Knob Name = "Depth" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Rate" default = "0.5" ID ="2" idx = "1" Dmin = "0.1" Dmax = "10" Type = "1" Step = "0.1" bind = "Sync" />
+      <Switch Name = "Sync" default = "0" ID ="3" idx = "2"   Type = "3" SubType="Power"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Sine Trem" Module="MOD" Code="04 00 00 26" Index="9" >
+      <Knob Name = "Depth" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Rate" default = "0.5" ID ="2" idx = "1" Dmin = "0.1" Dmax = "10" Type = "1" Step = "0.1" bind = "Sync" />
+      <Knob Name = "VOL" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Sync" default = "0" ID ="4" idx = "3"   Type = "3" SubType="Power"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Triangle Trem" Module="MOD" Code="04 00 00 27" Index="10" >
+      <Knob Name = "Depth" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Rate" default = "0.5" ID ="2" idx = "1" Dmin = "0.1" Dmax = "10" Type = "1" Step = "0.1" bind = "Sync" />
+      <Knob Name = "VOL" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Sync" default = "0" ID ="4" idx = "3"   Type = "3" SubType="Power"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Bias Trem" Module="MOD" Code="04 00 00 28" Index="11" >
+      <Knob Name = "Depth" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Rate" default = "0.5" ID ="2" idx = "1" Dmin = "0.1" Dmax = "10" Type = "1" Step = "0.1" bind = "Sync" />
+      <Knob Name = "VOL" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Sync" default = "0" ID ="4" idx = "3"   Type = "3" SubType="Power"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+      <Knob Name = "Bias" default = "0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1"  />
+    </Alg>
+
+</Catalog>
+
+
+<Catalog Name = "DLY" >
+    <Alg Name="Sweet" Module="DLY" Code="0B 00 00 0D" Index="0" >
+      <Knob Name = "Mix" default = "20.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Time" default = "500.0" ID ="2" idx = "1" Dmin = "20" Dmax = "4000" Type = "1" bind = "Sync" />
+      <Knob Name = "FdBk" default = "30.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Sync" default = "0" ID ="4" idx = "3"   Type = "3" SubType="Power"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+      <Switch Name = "Tail" default = "0" ID ="5" idx = "4"   Type = "3"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="P-Echo" Module="DLY" Code="0B 00 00 00" Index="1" >
+        <Knob Name = "Mix" default = "20.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Time" default = "500.0" ID ="2" idx = "1" Dmin = "20" Dmax = "4000" Type = "1" bind = "Sync" />
+        <Knob Name = "FdBk" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Switch Name = "Sync" default = "0" ID ="4" idx = "3"   Type = "3" SubType="Power"  >
+            <Menu Name = "On" ID= "1" />
+            <Menu Name = "Off" ID= "0" />
+        </Switch>
+        <Switch Name = "Tail" default = "0" ID ="5" idx = "4"   Type = "3"  >
+            <Menu Name = "On" ID= "1" />
+            <Menu Name = "Off" ID= "0" />
+        </Switch>
+    </Alg>
+
+    <Alg Name="M-Echo" Module="DLY" Code="0B 00 00 02" Index="2" >
+        <Knob Name = "Mix" default = "20.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Time" default = "500.0" ID ="2" idx = "1" Dmin = "20" Dmax = "4000" Type = "1" bind = "Sync" />
+        <Knob Name = "FdBk" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Switch Name = "Sync" default = "0" ID ="4" idx = "3"   Type = "3" SubType="Power"  >
+            <Menu Name = "On" ID= "1" />
+            <Menu Name = "Off" ID= "0" />
+        </Switch>
+        <Switch Name = "Tail" default = "0" ID ="5" idx = "4"   Type = "3"  >
+            <Menu Name = "On" ID= "1" />
+            <Menu Name = "Off" ID= "0" />
+        </Switch>
+    </Alg>
+
+    <Alg Name="T-Echo" Module="DLY" Code="0B 00 00 0B" Index="3" >
+        <Knob Name = "Mix" default = "20.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Time" default = "500.0" ID ="2" idx = "1" Dmin = "20" Dmax = "4000" Type = "1" bind = "Sync" />
+        <Knob Name = "FdBk" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Switch Name = "Sync" default = "0" ID ="4" idx = "3"   Type = "3" SubType="Power"  >
+            <Menu Name = "On" ID= "1" />
+            <Menu Name = "Off" ID= "0" />
+        </Switch>
+        <Switch Name = "Tail" default = "0" ID ="5" idx = "4"   Type = "3"  >
+            <Menu Name = "On" ID= "1" />
+            <Menu Name = "Off" ID= "0" />
+        </Switch>
+    </Alg>
+
+    <Alg Name="999 Echo" Module="DLY" Code="0B 00 00 12" Index="4" >
+        <Knob Name = "Mix" default = "20.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Time" default = "500.0" ID ="2" idx = "1" Dmin = "20" Dmax = "4000" Type = "1" bind = "Sync" />
+        <Knob Name = "FdBk" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Switch Name = "Sync" default = "0" ID ="4" idx = "3"   Type = "3" SubType="Power"  >
+            <Menu Name = "On" ID= "1" />
+            <Menu Name = "Off" ID= "0" />
+        </Switch>
+        <Switch Name = "Tail" default = "0" ID ="5" idx = "4"   Type = "3"  >
+            <Menu Name = "On" ID= "1" />
+            <Menu Name = "Off" ID= "0" />
+        </Switch>
+    </Alg>
+
+    <Alg Name="Rev Echo" Module="DLY" Code="0B 00 00 13" Index="5" >
+        <Knob Name = "Mix" default = "20.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "FdBk" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Time" default = "500.0" ID ="3" idx = "2" Dmin = "20" Dmax = "4000" Type = "1" bind = "Sync" />
+        <Switch Name = "Sync" default = "0" ID ="4" idx = "3"   Type = "3" SubType="Power"  >
+            <Menu Name = "On" ID= "1" />
+            <Menu Name = "Off" ID= "0" />
+        </Switch>
+        <Switch Name = "Tail" default = "0" ID ="5" idx = "4"   Type = "3"   >
+            <Menu Name = "On" ID= "1" />
+            <Menu Name = "Off" ID= "0" />
+        </Switch>
+    </Alg>
+
+    <Alg Name="Slapbk" Module="DLY" Code="0B 00 00 05" Index="6" >
+        <Knob Name = "Mix" default = "20.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+        <Knob Name = "Time" default = "500.0" ID ="2" idx = "1" Dmin = "20" Dmax = "4000" Type = "1" bind = "Sync" />
+        <Knob Name = "FdBk" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+
+        <Switch Name = "Tail" default = "0" ID ="5" idx = "3"   Type = "3"  >
+            <Menu Name = "On" ID= "1" />
+            <Menu Name = "Off" ID= "0" />
+        </Switch>
+    </Alg>
+
+    <Alg Name="Vin-Rack" Module="DLY" Code="0B 00 00 14" Index="7" >
+      <Knob Name = "Mix" default = "20.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "FdBk" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Time" default = "500.0" ID ="3" idx = "2" Dmin = "20" Dmax = "4000" Type = "1" bind = "Sync" />
+      <Knob Name = "Mod" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Tone" default = "50.0" ID ="5" idx = "4" Dmin = "0" Dmax = "99" Type = "1" />
+      <Switch Name = "Sync" default = "0" ID ="6" idx = "5"   Type = "3" SubType="Power"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+      <Switch Name = "Trail" default = "0" ID ="7" idx = "6"   Type = "3"  >
+          <Menu Name = "On" ID= "1" />
+          <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Swp Echo" Module="DLY" Code="0B 00 00 06" Index="8" >
+      <Knob Name = "Mix" default = "20.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Fdbk" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Time" default = "500.0" ID ="3" idx = "2" Dmin = "20" Dmax = "4000" Type = "1" bind = "T-Sync" />
+      <Knob Name = "S-Depth" default = "50" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "S-Rate" default = "50" ID ="5" idx = "4" Dmin = "0" Dmax = "99"   Type = "1" bind = "S-Sync"  />
+      <Switch Name = "S-Sync" default = "0" ID ="6" idx = "5"   Type = "3" SubType="Power"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+      <Switch Name = "T-Sync" default = "0" ID ="7" idx = "6"   Type = "3" SubType="Power"  >
+          <Menu Name = "On" ID= "1" />
+          <Menu Name = "Off" ID= "0" />
+      </Switch>
+      <Switch Name = "Trail" default = "0" ID ="8" idx = "7"   Type = "3"   >
+          <Menu Name = "On" ID= "1" />
+          <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Ping Pong" Module="DLY" Code="0B 00 00 04" Index="9" >
+      <Knob Name = "Mix" default = "20.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "FdBk" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Time" default = "500.0" ID ="3" idx = "2" Dmin = "20" Dmax = "4000" Type = "1" bind = "Sync" />
+      <Switch Name = "Sync" default = "0" ID ="4" idx = "3"   Type = "3" SubType="Power"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+      <Switch Name = "Trail" default = "0" ID ="5" idx = "4"   Type = "3"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="M-Echo2" Module="DLY" Code="0B 00 00 0C" Index="10" >
+      <Knob Name = "Mix" default = "20.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Time" default = "500.0" ID ="2" idx = "1" Dmin = "20" Dmax = "4000" Type = "1" bind = "Sync" />
+      <Knob Name = "FdBk" default = "30.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Tone" default = "50.0" ID ="4" idx = "3" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Sync" default = "0" ID ="6" idx = "4"   Type = "3" SubType="Power"  >
+          <Menu Name = "On" ID= "1" />
+          <Menu Name = "Off" ID= "0" />
+      </Switch>
+      <Switch Name = "Trail" default = "0" ID ="7" idx = "5"   Type = "3"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+
+    </Alg>
+
+</Catalog>
+
+
+<Catalog Name = "RVB" >
+    <Alg Name="Room" Module="RVB" Code="0C 00 00 00" Index="0" >
+      <Knob Name = "Mix" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PreDly" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "100" Type = "1"  />
+      <Knob Name = "Decay" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Trail" default = "0" ID ="4" idx = "3"   Type = "3"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Hall" Module="RVB" Code="0C 00 00 01" Index="1" >
+      <Knob Name = "Mix" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PreDly" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "100" Type = "1"  />
+      <Knob Name = "Decay" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Trail" default = "0" ID ="4" idx = "3"   Type = "3"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Church" Module="RVB" Code="0C 00 00 02" Index="2" >
+      <Knob Name = "Mix" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PreDly" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "100" Type = "1"  />
+      <Knob Name = "Decay" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Trail" default = "0" ID ="4" idx = "3"   Type = "3"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Plate" Module="RVB" Code="0C 00 00 03" Index="3" >
+      <Knob Name = "Mix" default = "30.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Decay" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "H-Damp" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Trail" default = "0" ID ="4" idx = "3"   Type = "3"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Spring" Module="RVB" Code="0C 00 00 04" Index="4" >
+      <Knob Name = "Mix" default = "30.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Decay" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Tone" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Trail" default = "0" ID ="4" idx = "3"   Type = "3"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="N-Star" Module="RVB" Code="0C 00 00 06" Index="5" >
+      <Knob Name = "Mix" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Decay" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Trail" default = "0" ID ="3" idx = "2"   Type = "3"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Deep Sea" Module="RVB" Code="0C 00 00 07" Index="6" >
+      <Knob Name = "Mix" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Decay" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Switch Name = "Trail" default = "0" ID ="3" idx = "2"   Type = "3"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Mod Verb" Module="RVB" Code="0C 00 00 08" Index="7" >
+      <Knob Name = "Mix" default = "30.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "PreDly" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "100" Type = "1"  />
+      <Knob Name = "Decay" default = "50.0" ID ="3" idx = "2" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Lo End" default = "0.0" ID ="4" idx = "3" Dmin = "-50" Dmax = "50" Type = "1"  />
+      <Knob Name = "Hi End" default = "0.0" ID ="5" idx = "4" Dmin = "-50" Dmax = "50" Type = "1"  />
+      <Switch Name = "Trail" default = "0" ID ="6" idx = "5"   Type = "3"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+    <Alg Name="Clear Sky" Module="RVB" Code="0C 00 00 05" Index="8" >
+      <Knob Name = "Mix" default = "50.0" ID ="1" idx = "0" Dmin = "0" Dmax = "99" Type = "1"  />
+      <Knob Name = "Decay" default = "50.0" ID ="2" idx = "1" Dmin = "0" Dmax = "100" Type = "1"  />
+      <Switch Name = "Trail" default = "0" ID ="3" idx = "2"   Type = "3"  >
+        <Menu Name = "On" ID= "1" />
+        <Menu Name = "Off" ID= "0" />
+      </Switch>
+    </Alg>
+
+</Catalog>
+
+
+</gp100>
