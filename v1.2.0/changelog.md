@@ -1,7 +1,7 @@
 # Changelog for desktop app v1.2.0 and firmware v1.5.0
 
 ## PRE Module
-All effects seems to be working properly and require no changes.
+All effects seems to be working properly and require no further changes.
 
 ### Pitch
 - L-Pitch knob fills in backwards compared to the unit. Does not cause crashes. No changes.
@@ -31,7 +31,7 @@ Requires further testing.
 Requires further testing.
 
 ## RVB Module
-Requires further testing.
+All effects seems to be working properly and require no further changes.
 
 ### Plate
 - Decay knob's range is [0-99] but firmware expects [0-100]. Does not cause crashes. Changed Dmax to 100.
