@@ -36,5 +36,8 @@ Requires further testing.
 ### Plate
 - Decay knob's range is [0-99] but firmware expects [0-100]. Does not cause crashes. Changed Dmax to 100.
 
+### Spring
+- Decay knob's range is [0-99] but firmware expects [0-100]. Does not cause crashes. Changed Dmax to 100.
+
 ### Clear Sky
 - Decay knob's range is [0-100] but firmware expects [0-99]. Can cause crashes. Changed Dmax to 99.
